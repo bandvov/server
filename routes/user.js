@@ -10,7 +10,7 @@ router.post(
   validatePassword,
   catchErrors(register)
 );
-router.post("https://chat-vv1.herokuapp.com/login", validateEmail, validatePassword, catchErrors(login));
+router.post("/login", validateEmail, validatePassword, catchErrors(login));
 router.post("/get-all-users", auth, catchErrors(getAllUsers));
 
 module.exports = router;
