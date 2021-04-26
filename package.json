@@ -16,8 +16,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js -p $PORT",
-    "dev": "nodemon server.js",
-    "install": "yarn install"
+    "dev": "nodemon server.js"
   },
   "author": "bandvov",
   "license": "ISC",
