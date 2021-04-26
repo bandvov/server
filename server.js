@@ -50,7 +50,7 @@ io.on("connect", (socket) => {
     if (error) {
       callback(error);
     }
-
+    console.log(isMember);
     socket.join(chatroomId);
     if (!isMember) {
       socket.emit("newMessage", { text: "Welcome " + userName });
